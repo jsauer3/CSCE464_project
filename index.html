@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="default.css">
+    </head>
+    <body>
+        <div id="logo_div" class="container">
+            <img id="logo" src="images/logo.png" height="100px" width="150px" onclick="go_to_home()">
+            <form id="searchbar_form" autocomplete="on" onsubmit="search()" style="padding-top: 20px;">
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search" size="50" style="height: 50px;">
+            </form>
+            <div id="cart_div">
+                <img id="cart_img" src="images/cart.png" height="100px" width="100px" onclick="go_to_cart()">
+                <div id="cart_size">In Cart: 0</div>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <h2 id="filter_teller">Filter: None</h2>
+        </div>
+        <div id="item_div" class="container">
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="bread" class="groc_img" src="items/bread.png" alt="Bread">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Bread</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="chips" class="groc_img" src="items/chips.png" alt="Chips">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Chips</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="ice_cream" class="groc_img" src="items/ice_cream.png" alt="Ice Cream">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Ice Cream</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="milk" class="groc_img" src="items/milk.png" alt="Milk">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Milk</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="rice" class="groc_img" src="items/rice.png" alt="Rice">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>White Rice</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="cheese" class="groc_img" src="items/cheese.png" alt="Cheese">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Cheese</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="cookies" class="groc_img" src="items/cookies.png" alt="Cookies">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Cookies</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="ham" class="groc_img" src="items/ham.png" alt="Ham">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Ham</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="orange_juice" class="groc_img" src="items/orange_juice.png" alt="Orange Juice">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Orange Juice</div>
+                </div>
+                <div class="groc_item">
+                    <form class="groc_item_form">
+                        <img id="saltines" class="groc_img" src="items/saltines.png" alt="Saltines">
+                        <button class="cart_button" type="submit">Add To Cart</button>
+                    </form>
+                    <div>Saltines</div>
+                </div>
+        </div>
+        <ul id="cart_list" style="padding-left: 250px;">
+        </ul>
+    </body>
+    <script src="scripts/index.js"></script>
+</html>

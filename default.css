@@ -1,0 +1,68 @@
+body {
+    background-color:whitesmoke;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+div.groc_item {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+.groc_item_form {
+    flex-direction: row;
+    position: relative;
+}
+
+.groc_item_form img {
+    height: 200px;
+    width: 200px;
+}
+
+.groc_item_form button {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+
+.groc_item_form button:hover {
+    background-color: green;
+}
+
+#cart_size {
+    color: white;
+}
+
+#logo_div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: green;
+    justify-content: space-between;
+}
+
+#item_div {
+    padding-top: 20px;
+    /* background-color: lightgreen; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#logo {
+    padding-left: 10px;
+}
+
+#cart_img {
+    padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
