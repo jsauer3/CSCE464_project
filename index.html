@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="default.css">
     </head>
     <body>
-        <div id="logo_div" class="container">
+        <header id="logo_div" class="container">
             <img id="logo" src="images/logo.png" height="100px" width="150px" onclick="go_to_home()">
             <form id="searchbar_form" autocomplete="on" onsubmit="search()" style="padding-top: 20px;">
                 <input type="text" id="searchbar" name="searchbar" placeholder="Search" size="50" style="height: 50px;">
@@ -13,8 +13,8 @@
                 <img id="cart_img" src="images/cart.png" height="100px" width="100px" onclick="go_to_cart()">
                 <div id="cart_size">In Cart: 0</div>
             </div>
-        </div>
-        <div>
+        </header>
+        <div id="filter_teller_div" hidden>
             <hr>
             <h2 id="filter_teller">Filter: None</h2>
         </div>
@@ -22,72 +22,102 @@
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="bread" class="groc_img" src="items/bread.png" alt="Bread">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Bread</div>
+                    <br>
+                    <div class="price">$5.99</div>
+                    <div class="description">Bread. This is a longer description to see how the text wraps around</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="chips" class="groc_img" src="items/chips.png" alt="Chips">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Chips</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Chips</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="ice_cream" class="groc_img" src="items/ice_cream.png" alt="Ice Cream">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Ice Cream</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Ice Cream</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="milk" class="groc_img" src="items/milk.png" alt="Milk">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Milk</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Milk</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="rice" class="groc_img" src="items/rice.png" alt="Rice">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>White Rice</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">White Rice</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="cheese" class="groc_img" src="items/cheese.png" alt="Cheese">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Cheese</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Cheese</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="cookies" class="groc_img" src="items/cookies.png" alt="Cookies">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Cookies</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Cookies</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="ham" class="groc_img" src="items/ham.png" alt="Ham">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Ham</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Ham</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="orange_juice" class="groc_img" src="items/orange_juice.png" alt="Orange Juice">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Orange Juice</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Orange Juice</div>
                 </div>
                 <div class="groc_item">
                     <form class="groc_item_form">
                         <img id="saltines" class="groc_img" src="items/saltines.png" alt="Saltines">
+                        <br>
                         <button class="cart_button" type="submit">Add To Cart</button>
                     </form>
-                    <div>Saltines</div>
+                    <br>
+                    <div class="price">$2.99</div>
+                    <div class="description">Saltines</div>
                 </div>
         </div>
         <ul id="cart_list" style="padding-left: 250px;">
